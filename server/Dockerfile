@@ -5,7 +5,7 @@ WORKDIR /app
 COPY server/package*.json ./server/
 RUN cd server && npm install
 
-COPY server ./server
+COPY . .
 COPY prisma ./prisma
 
 WORKDIR /app/server
